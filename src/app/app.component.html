@@ -1,0 +1,21 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="header">
+  <!--Left Side of Header-->
+  <h1><img [src] ="logoImg" alt="logo image" width="50" height="50"></h1>
+  <h1>{{title}}</h1>
+  <!--Right Side of Header-->
+  <a id="current_Date"> XX:YY</a>
+  <br>
+  <nav>
+  <a routerLink="/items">Home</a>
+  <a routerLink="/dashboard">Top Items</a>
+  </nav>
+</div>
+<!--FOOTER-->
+<div class="footer">
+  <p><b>© All rights reserved, 2022 | Phone: 505-691-9083 | Email: someone@gmail.com</b></p>
+</div>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+

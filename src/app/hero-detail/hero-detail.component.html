@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">Item name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" disabled/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+
+<div class="box">
+  <p id="itemPrice">Item Price Here</p>
+  <div id="itemPicture"><img [src] ="itemPicA" alt="item picture" width="300" height="300"></div> 
+  <p id="itemDescription">Item Description Here</p>
+</div>

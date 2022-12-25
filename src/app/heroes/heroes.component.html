@@ -1,0 +1,10 @@
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/items/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <div><img src = {{hero.itemImage}} alt="item picture" width="100" height="100"></div> 
+    <span class="box"><p><b>Price:</b> {{hero.price}} <br> <b>About:</b> {{hero.desc}}</p></span> 
+    
+  </li>
+</ul>

@@ -1,0 +1,45 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+button {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.box {  
+  height: 250;
+  float: right;
+  border: black 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "itemPrice itemPicture itemPicture"
+    "itemDescription itemPicture itemPicture"
+    ". . .";
+}
+
+.box #itemPicture { grid-area: itemPicture; }
+
+.box #itemDescription { grid-area: itemDescription; }
+
+.box #itemPrice { grid-area: itemPrice; }

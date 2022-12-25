@@ -1,0 +1,55 @@
+/* AppComponent's private CSS styles */
+body {
+  background-color: white; /* Entire page background colour */
+}
+
+.header {
+  overflow: hidden;
+  background-color: #92AFD7; /* Header background colour */
+  padding: 20px 10px;
+}
+
+  .header a{
+    float: right;
+  }
+
+h1 {
+  margin-bottom: 0;
+  float:left;
+  }
+
+  nav a { /* nav a = Home Button and Top Items Button */
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  nav a:active {
+    background-color: black;
+  }
+
+header-right{
+  margin-bottom: 0;
+  float: right;
+}
+
+.footer {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #92AFD7; /* Footer background colour */
+  color: white; /* Footer text colour */
+  text-align: center;
+  z-index: 1;
+}
